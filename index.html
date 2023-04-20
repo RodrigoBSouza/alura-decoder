@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Alura Decoder</title>
+</head>
+<body>
+    <header>
+        <span>alura-decoder</span>
+    </header>
+    
+    <section class="container">
+        <div class="container-text">
+            <div class="container-input-text">
+                <label for="text">Type your text:</label>
+                <textarea type="text" name="text" id="text"></textarea>
+            </div>
+
+            <div class="container-buttons">
+                <button id="btn-encode" onclick="encoder()">Encode</button>
+                <button id="btn-decode" onclick="decoder()">Decode</button>
+            </div>
+        </div>
+
+        <div class="container-image-response">
+            <div id="container-image-response-hidden">
+                <img src="response.jpg" alt="Imagem com uma pessoa segurando uma lupa">
+
+                <div class="container-menssage-response">
+                    <p>No messages found!</p>
+                    <p>Type text that you want to encode or decode.</p>
+                </div>
+            </div>
+
+            <div id="container-loader">
+                <div id="loader"></div>
+            </div>
+
+            <div id="container-response">
+                <textarea type="text" name="text" id="response"></textarea>
+                <button id="btn-copy" onclick="copyText()">Copy</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        Developed by Rodrigo Souza 
+        <a href="https://www.linkedin.com/in/rodrigo-b-souza/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/RodrigoBSouza" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

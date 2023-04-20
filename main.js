@@ -52,6 +52,7 @@ function encoder() {
 
 function decoder() {
     loader.style.display = 'flex';
+    containerResponseHidden.style.display = 'none';
     containerResponse.style.display = 'none';
     
     setTimeout(() => {
